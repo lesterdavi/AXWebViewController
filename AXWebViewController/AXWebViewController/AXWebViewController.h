@@ -46,8 +46,7 @@
 #endif
 
 #import <UIKit/UIKit.h>
-#import <NJKWebViewProgress/NJKWebViewProgress.h>
-#import <NJKWebViewProgress/NJKWebViewProgressView.h>
+
 #if AX_WEB_VIEW_CONTROLLER_USING_WEBKIT
 #import <WebKit/WebKit.h>
 #import "AXSecurityPolicy.h"
@@ -111,33 +110,20 @@ typedef NS_ENUM(NSInteger, AXWebViewControllerNavigationType) {
 
 AX_WEB_VIEW_CONTROLLER_AVAILABLITY;
 
-#if AX_WEB_VIEW_CONTROLLER_USING_WEBKIT
+
 typedef NSURLSessionAuthChallengeDisposition (^WKWebViewDidReceiveAuthenticationChallengeHandler)(WKWebView *webView, NSURLAuthenticationChallenge *challenge, NSURLCredential * _Nullable __autoreleasing * _Nullable credential);
-API_AVAILABLE(ios(8.0))
+
 @interface AXWebViewController : UIViewController <WKUIDelegate, WKNavigationDelegate>
 {
     @protected
     WKWebView *_webView;
     NSURL *_URL;
 }
-#else
-API_AVAILABLE(ios(7.0))
-@interface AXWebViewController : UIViewController <UIWebViewDelegate>
-{
-@protected
-    UIWebView *_webView;
-    NSURL *_URL;
-}
-#endif
 /// Delegate.
 @property(assign, nonatomic) id<AXWebViewControllerDelegate>delegate;
-#if AX_WEB_VIEW_CONTROLLER_USING_WEBKIT
-/// WebKit web view.
+
 @property(readonly, nonatomic) WKWebView *webView;
-#else
-/// Web view.
-@property(readonly, nonatomic) UIWebView *webView;
-#endif
+
 #if AX_WEB_VIEW_CONTROLLER_USING_WEBKIT
 /// Default is NO. Enabled to allow present alert views.
 @property(assign, nonatomic) BOOL enabledWebViewUIDelegate;

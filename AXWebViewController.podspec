@@ -31,7 +31,7 @@ A multi style picker view in iOS.
 * Try to keep it short, snappy and to the point.
 * Finally, don't worry about the indent, CocoaPods strips it!
 DESC
-s.homepage     = "https://github.com/devedbox/AXWebViewController"
+s.homepage     = "https://github.com/htyo/AXWebViewController"
 # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
