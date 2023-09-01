@@ -31,7 +31,7 @@ A multi style picker view in iOS.
 * Try to keep it short, snappy and to the point.
 * Finally, don't worry about the indent, CocoaPods strips it!
 DESC
-s.homepage     = "https://github.com/htyo/AXWebViewController"
+s.homepage     = "https://github.com/lesterdavi/AXWebViewController"
 # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -56,10 +56,10 @@ s.license      = "MIT"
 #  profile URL.
 #
 
-s.author             = { "艾星" => "862099730@qq.com" }
-# Or just: s.author    = "aiXing"
-# s.authors            = { "aiXing" => "862099730@qq.com" }
-# s.social_media_url   = "http://twitter.com/aiXing"
+s.author             = { "lesterdavi" => "lesterdavi14@gmail.com" }
+# Or just: s.author    = "lesterdavi"
+# s.authors            = { "lesterdavi" => "lesterdavi@qq.com" }
+# s.social_media_url   = "http://twitter.com/lesterdavi"
 
 # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 #
@@ -139,7 +139,6 @@ s.requires_arc = true
 # s.dependency "JSONKit", "~> 1.4"
 s.dependency "AXPracticalHUD"
 s.dependency "AXNavigationBackItemInjection"
-s.dependency "NJKWebViewProgress"
 s.dependency "Aspects"
 
 end
